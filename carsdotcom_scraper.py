@@ -1,5 +1,6 @@
 # carsdotcom_scraper.py
 
+import os
 import sys
 import pandas as pd
 from bs4 import BeautifulSoup
@@ -55,9 +56,14 @@ def scrape_multiple_pages(zip_code, max_pages=3):
 
 def main():
     date = sys.argv[1] if len(sys.argv) > 1 else datetime.now(timezone.utc).strftime("%Y%m%d")
-    data = scrape_multiple_pages("98225", max_pages=3)
-    df = pd.DataFrame(data)
-    df.to_csv(f"data/{date}_carsdotcom_4runners.csv", index=False)
+    fn = os.path.join("data", f"{date}_carsdotcom_4runners.csv")
+    if os.path.exists(fn):
+        print(f"Data file for {date} already exists...skipping scrape.")
+    else:
+        data = scrape_multiple_pages("98225", max_pages=3)
+        df = pd.DataFrame(data)
+        df.to_csv(fn, index=False)
+
     return 0
 
 if __name__ == "__main__":

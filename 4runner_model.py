@@ -25,7 +25,7 @@ def build_model(df):
     categorical = ["trim"]
     numerical = ["age", "log_mileage"]
 
-    preprocessor = ColumnTransformere(
+    preprocessor = ColumnTransformer(
         transformers=[
             ("cat", OneHotEndocder(handle_unknown="ignore"), categorical),
             ("num", "passthrough", numerical)
