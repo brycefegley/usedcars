@@ -1,0 +1,47 @@
+name: Daily Cars.com Scraper and Model
+
+on:
+  schedule:
+    - cron: "0 14 * * *"
+  workflow_dispatch:
+
+jobs:
+  scrape-and-model:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Set Up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run model script
+        run: python 4runner_model.py
+
+      - name: Commit updated plot
+        run: |
+          git config --global user.email "actions@github.com"
+          git config --global user.name "GitHub Actions"
+          git add output/latest_plot.html
+          git commit -m "Update plot"
+          git push
+        continue-on-error: true
+
+
+      - name: Send email
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: stmp.gmail.com
+          server_port: 587
+          username: ${{ secrets.EMAIL_USER }}
+          password: ${{ secrets.EMAIL_PASS }}
+          subject: "4Runner Market Update"
+          body: "See the latest predicted vs actual prices: https://github.com/brycefegley/usedcars/blob/main/output/latest_plot.html"
+          to: brycefegley@gmail.com
+          from: 4Runner Alert brycefegley@gmail.com
