@@ -28,7 +28,7 @@ def build_model(df):
 
     preprocessor = ColumnTransformer(
         transformers=[
-            ("cat", OneHotEndocder(handle_unknown="ignore"), categorical),
+            ("cat", OneHotEncoder(handle_unknown="ignore"), categorical),
             ("num", "passthrough", numerical)
         ]
     )
@@ -62,7 +62,7 @@ def plot_results(df):
             "Predicted: $%{customdata[6]:,.0f}<br>" +
             "Residual: $%{customdata[7]:,.0f}<extra></extra>"
     )
-    fig.update_traces(df["url"])
+    fig.update_traces(customdata=df["url"])
 
     min_val = min(df["price"].min(), df["predicted_price"].min())
     max_val = max(df["price"].max(), df["predicted_price"].max())
