@@ -78,7 +78,7 @@ def plot_results(df):
 
 def main():
     date = sys.argv[1] if len(sys.argv) > 1 else datetime.now(timezone.utc).strftime("%Y%m%d")
-    df = pd.read_csv(f"/data/{date}_carsdotcom_4runners.csv")
+    df = pd.read_csv(f"data/{date}_carsdotcom_4runners.csv")
     processed_df = process_data(df)
     model, modeled_df = build_model(processed_df)
     plot_results(modeled_df)
