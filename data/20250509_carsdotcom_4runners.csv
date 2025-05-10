@@ -1,4 +1,5 @@
 year,title,price,mileage,dealer,url
+2018,2018 Toyota 4Runner SR5 Premium,33333,89446,Lum's GMC,https://www.cars.com/vehicledetail/8b7997d1-2d36-4a0a-b32d-35765e50a995/
 2022,2022 Toyota 4Runner Limited,49997,22038,Northwest Chevrolet of Bellingham,https://www.cars.com/vehicledetail/63aacbb1-17e8-40e1-be8b-b911fcdc7180/
 2021,2021 Toyota 4Runner Venture Special Edition,46995,45572,Findlay Downtown Toyota Spokane,https://www.cars.com/vehicledetail/6a917856-75b5-4b74-bdae-563b6332c7d2/
 2021,2021 Toyota 4Runner SR5,31499,88857,Subaru of Spokane,https://www.cars.com/vehicledetail/bc84cf29-554a-469c-b2a3-6951d326ddd6/
@@ -30,22 +31,21 @@ year,title,price,mileage,dealer,url
 2021,2021 Toyota 4Runner SR5 Premium,43998,37959,CarMax Clackamas,https://www.cars.com/vehicledetail/2b9fde39-dd58-44d4-afaf-15f2e872f85d/
 2021,2021 Toyota 4Runner TRD Off Road Premium,44995,37690,Camp Chevrolet,https://www.cars.com/vehicledetail/a9799cd7-7d26-4562-8ba5-990b335b9581/
 2021,2021 Toyota 4Runner Trail Special Edition,38950,95849,Tacoma Subaru,https://www.cars.com/vehicledetail/6cdf6104-bf18-4224-9228-f81666cbe691/
-2018,2018 Toyota 4Runner TRD Off Road Premium,38995,91678,Eastlake Auto Brokers,https://www.cars.com/vehicledetail/5f185497-bf8f-4681-984a-c44b4047c3ef/
 2022,2022 Toyota 4Runner TRD Off Road Premium,53999,48908,Sports Cars International,https://www.cars.com/vehicledetail/a05bfa98-ac49-4cd0-af56-fabf6f70d030/
 2023,2023 Toyota 4Runner SR5,41850,41442,MB Motors - Bellingham,https://www.cars.com/vehicledetail/5b9625ca-fd7d-4a43-b3ec-a38e0d773acb/
 2024,2024 Toyota 4Runner TRD Off Road,46998,18079,CarMax Vancouver,https://www.cars.com/vehicledetail/f6463b3e-d91a-4538-a7ec-51571be0ade8/
 2018,2018 Toyota 4Runner SR5 Premium,33999,98117,Sports Cars International,https://www.cars.com/vehicledetail/05456edb-33af-4eb0-bc9c-909ceec45fa7/
 2024,2024 Toyota 4Runner Limited,59470,7152,Evergreen Chevrolet,https://www.cars.com/vehicledetail/6a1ea810-2327-49aa-9eb5-f564c1cb054d/
 2024,2024 Toyota 4Runner SR5,40900,21906,Lexus of Seattle,https://www.cars.com/vehicledetail/af554d7a-b56d-4196-8e5d-203e64faa175/
-2014,2014 Toyota 4Runner SR5,26845,100475,South Tacoma Honda,https://www.cars.com/vehicledetail/a26aad39-f728-4147-8e10-3545688e808d/
+2014,2014 Toyota 4Runner SR5,26376,100475,South Tacoma Honda,https://www.cars.com/vehicledetail/a26aad39-f728-4147-8e10-3545688e808d/
 2023,2023 Toyota 4Runner TRD Sport,41486,19810,Pierre GMC of Everett,https://www.cars.com/vehicledetail/4ac980a3-c453-4917-a97c-39bd7f34c836/
 2019,2019 Toyota 4Runner Limited,30000,136362,Rairdon's Dodge Chrysler Jeep Ram of Marysville,https://www.cars.com/vehicledetail/dcfbc001-9676-40e7-b7fa-d1647b4d6562/
 2024,2024 Toyota 4Runner TRD Off Road Premium,56495,15101,Toyota of Lake City,https://www.cars.com/vehicledetail/bbc02f6b-b1f9-4729-b5eb-a6d935264c64/
+2019,2019 Toyota 4Runner TRD Off Road Premium,40777,59915,Genesis of Portland,https://www.cars.com/vehicledetail/186b40da-3757-41bb-af37-89f4757de637/
 2021,2021 Toyota 4Runner SR5,35998,37334,CarMax Kearny Mesa,https://www.cars.com/vehicledetail/e9ac099e-2bbc-4d5b-9ff8-cf44d413eef5/
 2023,2023 Toyota 4Runner SR5 Premium,48998,8572,CarMax Norco,https://www.cars.com/vehicledetail/3c2694e7-4ff8-4d57-a7b0-15e1072f6921/
-2019,2019 Toyota 4Runner TRD Off Road Premium,40777,59915,Genesis of Portland,https://www.cars.com/vehicledetail/186b40da-3757-41bb-af37-89f4757de637/
 2021,2021 Toyota 4Runner TRD Off Road Premium,40888,78590,Eastside Subaru,https://www.cars.com/vehicledetail/59020727-5478-4d9b-9725-0931d3a6487d/
-2022,2022 Toyota 4Runner TRD Off Road Premium,45999,47186,Tonkin Hillsboro Ford,https://www.cars.com/vehicledetail/052cce93-0c22-49e9-9a75-cfbe25c07943/
+2022,2022 Toyota 4Runner TRD Off Road Premium,44980,47186,Tonkin Hillsboro Ford,https://www.cars.com/vehicledetail/052cce93-0c22-49e9-9a75-cfbe25c07943/
 2021,2021 Toyota 4Runner TRD Off Road Premium,44997,30439,Westlie Ford,https://www.cars.com/vehicledetail/e96106a8-7bb2-48d5-8601-bc214bdd846a/
 2018,2018 Toyota 4Runner SR5,31886,76921,Beaverton Car Company,https://www.cars.com/vehicledetail/c183704c-3245-499a-8416-29d2f2edb63b/
 2020,2020 Toyota 4Runner Sport,35742,73829,Titus-Will Chevrolet GMC Cadillac - Olympia,https://www.cars.com/vehicledetail/64a702b5-d9f4-46e8-96a3-94c22aee7aee/
@@ -62,5 +62,6 @@ year,title,price,mileage,dealer,url
 2022,2022 Toyota 4Runner SR5 Premium,46888,32671,Titus-Will Used Cars - Lakewood,https://www.cars.com/vehicledetail/c2940a59-4a94-431d-ae71-9a165be7a453/
 2011,2011 Toyota 4Runner SR5 4WD,17995,226241,Auto Connections of Bellevue,https://www.cars.com/vehicledetail/3c4eaa35-ed44-4bfd-a3d4-8a2b6b8be3bb/
 2019,2019 Toyota 4Runner SR5 Premium,33953,98661,Omak Dodge RAM Jeep Chrysler,https://www.cars.com/vehicledetail/db432535-fc57-4805-8ac1-aeb6b10707ab/
+2019,2019 Toyota 4Runner SR5 Premium,36000,57935,Rairdon Kia,https://www.cars.com/vehicledetail/fab3419d-16e9-4f6a-ba63-2043ab18cac2/
 2024,2024 Toyota 4Runner TRD Off Road Premium,57998,5706,CarMax Salt Lake (South Jordan),https://www.cars.com/vehicledetail/7bf9e63f-3ab1-4090-9da5-24444768fbd1/
 2023,2023 Toyota 4Runner Limited,53998,14443,CarMax Tucson,https://www.cars.com/vehicledetail/73d74fe9-1e49-42fe-adfd-3bfb43a7cb6f/
