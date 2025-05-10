@@ -1,5 +1,6 @@
 # 4runner_model.py
 
+import sys
 import pandas as pd
 import numpy as np
 from sklearn.linear_model import LinearRegression
@@ -8,7 +9,7 @@ from sklearn.pipeline import make_pipeline
 from sklearn.metrics import mean_squared_error
 import plotly.express as px
 import plotly.io as pio
-from datetime import datetime
+from datetime import datetime, timezone
 
 def process_data(df):
     df[["year", "make", "model", "trim"]] = df["title"].str.extract(r"(\d{4})\s+(\w+)\s+(\w+)\s+(.*)")
@@ -76,7 +77,7 @@ def plot_results(df):
     pio.write_html(fig, file="output/latest_plot.html", auto_open=False)
 
 def main():
-    date = datetime.today().strftime("%Y%m%d")
+    date = sys.argv[1] if len(sys.argv) > 1 else datetime.now(timezone.utc).strftime("%Y%m%d")
     df = pd.read_csv(f"/data/{date}_carsdotcom_4runners.csv")
     processed_df = process_data(df)
     model, modeled_df = build_model(processed_df)

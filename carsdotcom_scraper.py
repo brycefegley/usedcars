@@ -1,9 +1,10 @@
 # carsdotcom_scraper.py
 
+import sys
 import pandas as pd
 from bs4 import BeautifulSoup
 from playwright.sync_api import sync_playwright
-from datetime import datetime
+from datetime import datetime, timezone
 
 def fetch_cars_page(zip_code, page=1):
     url = (
@@ -53,7 +54,7 @@ def scrape_multiple_pages(zip_code, max_pages=3):
     return all_data
 
 def main():
-    date = datetime.today().strftime("%Y%m%d")
+    date = sys.argv[1] if len(sys.argv) > 1 else datetime.now(timezone.utc).strftime("%Y%m%d")
     data = scrape_multiple_pages("98225", max_pages=3)
     df = pd.DataFrame(data)
     df.to_csv(f"data/{date}_carsdotcom_4runners.csv", index=False)

@@ -24,11 +24,14 @@ jobs:
       - name: Install Playwright browsers
         run: playwright install
 
+      - name: Set date variable
+        run: echo "DATE=$(date -u +%Y%m%d)" >> $GITHUB_ENV
+
       - name: Run Cars.com scraper
-        run: python carsdotcom_scraper.py
+        run: python carsdotcom_scraper.py $DATE
 
       - name: Run model script
-        run: python 4runner_model.py
+        run: python 4runner_model.py $DATE
 
       - name: Commit updated plot
         run: |
